@@ -48,6 +48,10 @@ nav ul.menu{
     gap: 10px;
 }
 
+.logo{
+    height: 20px;
+}
+
 /*
 header
 */
@@ -60,10 +64,6 @@ header{
     left: 0;
     right: 0;
     z-index: 100;
-}
-
-header img{
-    height: 20px;
 }
 
 header nav ul li a{
@@ -95,7 +95,88 @@ main{
 
 .box{
     width: calc(33.33% - 20px);
-    height: 500px;
     margin: 15px 10px;
-    border: 1px solid blue;
+    color: #000;
+}
+
+.immagine{
+    position: relative;
+}
+
+.box .cuore{
+    font-size: 18px;
+    color: #000;
+    padding: 10px;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.box .avvisi{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+}
+
+.avvisi > *{
+    padding: 2px 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.sconto{
+    background-color: red;
+    margin-right: 2px;
+}
+
+.sostenibilità{
+    background-color: green;
+}
+
+.prodotto{
+    width: 100%;
+}
+
+.prodotto-hover{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.nome{
+    font-size: 14px;
+}
+
+.prezzo{
+    font-size: 12px;
+    color: red;
+}
+
+.prezzo .prezzo-tagliato{
+    margin-left: 5px;
+    text-decoration: line-through;
+    color: black;
+}
+
+.immagine:hover .prodotto-hover{
+    opacity: 1;
+}
+
+/*
+footer
+*/
+
+footer{
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer .social a{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 5px;
 }
